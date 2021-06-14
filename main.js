@@ -1,9 +1,10 @@
-function fetchData(){
-    fetch("https://grooton3.free.beeceptor.com/my/api/path").then(response => {
+function Data(){
+    fetch("https://grooton3.free.beeceptor.com/my/api/path")
+    .then(response => {
         return response.json();
     })
     .then(userdata => {
-        console.log(userdata);
+        // console.log(userdata);
         const userhtml = userdata.map(user => 
             {
                 return `<div class="user-content col-lg-3 col-md-4 col-sm-12">
@@ -24,4 +25,4 @@ function fetchData(){
     });
 }
 
-fetchData();
+Data();
